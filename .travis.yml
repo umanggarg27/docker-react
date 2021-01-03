@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t myimage -f Dockerfile.dev .
+  - docker build -t umang9 -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true myimage npm run test 
+  - docker run -e CI=true umang9 npm run test 
